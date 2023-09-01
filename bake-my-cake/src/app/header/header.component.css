@@ -1,0 +1,9 @@
+#icons {
+    position: absolute;
+    right: 20px;
+}
+
+mat-icon {
+    margin-right: 15px;
+    cursor: pointer;
+}

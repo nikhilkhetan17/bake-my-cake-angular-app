@@ -1,0 +1,26 @@
+import { Component, OnInit } from '@angular/core';
+import { Cake } from '../models/cake';
+import { CakeService } from '../services/cake.service';
+
+@Component({
+  selector: 'app-home-view',
+  templateUrl: './home-view.component.html',
+  styleUrls: ['./home-view.component.css'],
+})
+
+export class HomeViewComponent {
+  cakes: Cake[] = [];
+
+  constructor(private cakeService: CakeService) {}
+
+  ngOnInit(): void {
+    this.cakeService.getCakes().subscribe({
+      next: (data) => {
+        this.cakes = data;
+      },
+      error: (error) => {
+        alert('Failed to fetch Cakes due to Server Error !!');
+      },
+    });
+  }
+}

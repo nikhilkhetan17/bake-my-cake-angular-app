@@ -1,0 +1,17 @@
+<mat-card class="cake-card">
+  <img src="../../assets/images/{{ cake?.name }}.jpg" alt="{{ cake?.name }}" id="card-img"/>
+  <mat-card-header>
+    <mat-card-subtitle class="card-header">{{cake?.name}}</mat-card-subtitle>
+    <mat-card-title class="card-header">Rs {{cake?.price}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="rating-wrapper">
+        <span>{{cake?.rating}}</span>
+        <img src="../../assets/images/rating.jpg" alt="rating">
+    </div>
+    <mat-card-subtitle id="delivery">Earliest Delivery: <span>{{cake?.earliestDelivery}}</span></mat-card-subtitle>
+  </mat-card-content>
+  <mat-card-actions>
+    <a href="#"><mat-icon color="primary">shopping_cart</mat-icon></a>
+  </mat-card-actions>
+</mat-card>

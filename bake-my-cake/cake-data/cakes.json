@@ -1,0 +1,11 @@
+{
+    "cakes": [
+        {
+            "id": 1,
+            "name": "Berries Summer Cupcakes",
+            "price": 499,
+            "rating": 4.7,
+            "earliestDelivery": "Tomorrow"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+.cake-card {
+  width: 280px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #999797;
+}
+
+#card-img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-header {
+    font-size: 16px;
+}
+
+.rating-wrapper {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.rating-wrapper span {
+    font-weight: 500;
+    color: #F7A600;
+}
+
+#delivery span {
+  color: rgb(12, 175, 12);
+}
+
+mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+}
