@@ -3,15 +3,15 @@
       [mode]="'side'" [opened]="false">
     <!-- <mat-toolbar>Menu</mat-toolbar> -->
     <mat-nav-list>
-      <a mat-list-item href="/">
+      <a mat-list-item routerLink="/home">
         <mat-icon class="icon">home</mat-icon>
         <span>Home</span>
       </a>
-      <a mat-list-item href="/">
+      <a mat-list-item href="#">
         <mat-icon class="icon">archive</mat-icon>
         <span>Archives</span>
       </a>
-      <a mat-list-item href="/">
+      <a mat-list-item href="#">
         <mat-icon class="icon">settings</mat-icon>
         <span>Settings</span>
       </a>
@@ -26,6 +26,8 @@
       <span><app-header></app-header></span>
     </mat-toolbar>
     <!-- Add Content Here -->
-    <app-home-view></app-home-view>
+    <!-- <app-home-view></app-home-view> -->
+    <!-- <router-outlet></router-outlet> -->
+   <app-cake-cart></app-cake-cart>
   </mat-sidenav-content>
 </mat-sidenav-container>

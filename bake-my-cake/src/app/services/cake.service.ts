@@ -14,4 +14,8 @@ export class CakeService {
   getCakes(): Observable<Array<Cake>> {
     return this.http.get<Cake[]>(this.URL);
   }
+
+  getCake(id?: number): Observable<Cake> {
+    return this.http.get<Cake>(`${this.URL}/${id}`)
+  }
 }

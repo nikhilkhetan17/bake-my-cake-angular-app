@@ -7,3 +7,8 @@ mat-icon {
     margin-right: 15px;
     cursor: pointer;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}

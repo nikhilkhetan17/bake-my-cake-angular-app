@@ -8,10 +8,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { HomeViewComponent } from './home-view/home-view.component';
+import { CakeCardComponent } from './cake-card/cake-card.component';
+import { CakeCartComponent } from './cake-cart/cake-cart.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
-import { CakeCardComponent } from './cake-card/cake-card.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatRippleModule} from '@angular/material/core';
@@ -21,6 +22,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { NavigationPanelComponent } from './navigation-panel/navigation-panel.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -31,6 +35,8 @@ import { NavigationPanelComponent } from './navigation-panel/navigation-panel.co
     HomeViewComponent,
     SearchComponent,
     NavigationPanelComponent,
+    NotFoundComponent,
+    CakeCartComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +52,9 @@ import { NavigationPanelComponent } from './navigation-panel/navigation-panel.co
     MatInputModule,
     MatFormFieldModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatTooltipModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
