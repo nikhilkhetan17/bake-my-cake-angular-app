@@ -1,0 +1,9 @@
+<div id="search">
+    <mat-form-field appearance="fill" color="accent">
+        <mat-label>Search Cake</mat-label>
+        <input type="text" (input)="searchCake()" matInput [(ngModel)]="searchText">
+    </mat-form-field>
+    <button mat-icon-button>
+        <mat-icon>search</mat-icon>
+    </button>
+</div>

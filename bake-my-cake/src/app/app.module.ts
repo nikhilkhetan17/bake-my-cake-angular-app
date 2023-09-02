@@ -14,13 +14,23 @@ import {MatIconModule} from '@angular/material/icon';
 import { CakeCardComponent } from './cake-card/cake-card.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import {MatRippleModule} from '@angular/material/core';
+import { SearchComponent } from './search/search.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { NavigationPanelComponent } from './navigation-panel/navigation-panel.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CakeCardComponent,
-    HomeViewComponent
+    HomeViewComponent,
+    SearchComponent,
+    NavigationPanelComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +41,12 @@ import {MatButtonModule} from '@angular/material/button';
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatRippleModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

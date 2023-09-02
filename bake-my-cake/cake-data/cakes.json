@@ -1,11 +1,130 @@
 {
-    "cakes": [
-        {
-            "id": 1,
-            "name": "Berries Summer Cupcakes",
-            "price": 499,
-            "rating": 4.7,
-            "earliestDelivery": "Tomorrow"
-        }
-    ]
+  "cakes": [
+    {
+      "id": 1,
+      "name": "Berries Summer Cupcakes",
+      "price": 299,
+      "rating": 4.5,
+      "earliestDelivery": "Tomorrow"
+    },
+    {
+      "id": 2,
+      "name": "Brownies Different Flavor",
+      "price": 399,
+      "rating": 4.7,
+      "earliestDelivery": "Tomorrow"
+    },
+    {
+      "id": 3,
+      "name": "Butter Cookies",
+      "price": 199,
+      "rating": 4.6,
+      "earliestDelivery": "Tomorrow"
+    },
+    {
+      "id": 4,
+      "name": "Cherry Jelly Cheesecake",
+      "price": 499,
+      "rating": 4.9,
+      "earliestDelivery": "Tomorrow"
+    },
+    {
+      "id": 5,
+      "name": "Chocolate Blueberries Cake",
+      "price": 699,
+      "rating": 4.8,
+      "earliestDelivery": "Tomorrow"
+    },
+    {
+      "id": 6,
+      "name": "Chocolate Bonbons",
+      "price": 599,
+      "rating": 4.4,
+      "earliestDelivery": "Tomorrow"
+    },
+    {
+      "id": 7,
+      "name": "Chocolate Cookies",
+      "price": 499,
+      "rating": 4.5,
+      "earliestDelivery": "Tomorrow"
+    },
+    {
+      "id": 8,
+      "name": "Chocolate Cupcake",
+      "price": 199,
+      "rating": 4.8,
+      "earliestDelivery": "Tomorrow"
+    },
+    {
+      "id": 9,
+      "name": "Chocolate Summer Berries",
+      "price": 299,
+      "rating": 4.6,
+      "earliestDelivery": "Tomorrow"
+    },
+    {
+      "id": 10,
+      "name": "Classic Cheesecake",
+      "price": 399,
+      "rating": 4.9,
+      "earliestDelivery": "Tomorrow"
+    },
+    {
+      "id": 11,
+      "name": "Cookies Cream Cake",
+      "price": 599,
+      "rating": 4.5,
+      "earliestDelivery": "Tomorrow"
+    },
+    {
+      "id": 12,
+      "name": "Easter Cupcakes",
+      "price": 199,
+      "rating": 4.7,
+      "earliestDelivery": "Tomorrow"
+    },
+    {
+      "id": 13,
+      "name": "Fruit Cake",
+      "price": 599,
+      "rating": 4.8,
+      "earliestDelivery": "Tomorrow"
+    },
+    {
+      "id": 14,
+      "name": "Isometric chocolate brownies",
+      "price": 199,
+      "rating": 4.3,
+      "earliestDelivery": "Tomorrow"
+    },
+    {
+      "id": 15,
+      "name": "Monster Theme Cake",
+      "price": 399,
+      "rating": 4.9,
+      "earliestDelivery": "Tomorrow"
+    },
+    {
+      "id": 16,
+      "name": "Muffin Devil Horns",
+      "price": 299,
+      "rating": 4.5,
+      "earliestDelivery": "Tomorrow"
+    },
+    {
+      "id": 17,
+      "name": "Muffin Ghost",
+      "price": 249,
+      "rating": 4.7,
+      "earliestDelivery": "Tomorrow"
+    },
+    {
+      "id": 18,
+      "name": "Pumpkin Spice Cupcakes",
+      "price": 199,
+      "rating": 4.6,
+      "earliestDelivery": "Tomorrow"
+    }
+  ]
 }
