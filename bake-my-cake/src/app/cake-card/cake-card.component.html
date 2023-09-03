@@ -12,6 +12,6 @@
     <mat-card-subtitle id="delivery">Earliest Delivery: <span>{{cake?.earliestDelivery}}</span></mat-card-subtitle>
   </mat-card-content>
   <mat-card-actions>
-    <a href="#"><mat-icon color="primary" matTooltip="add to cart">shopping_cart</mat-icon></a>
+    <a routerLink="/order-view/{{cake?.id}}"><mat-icon color="primary" matTooltip="add to cart">shopping_cart</mat-icon></a>
   </mat-card-actions>
 </mat-card>

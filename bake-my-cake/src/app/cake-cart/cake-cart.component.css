@@ -1,0 +1,110 @@
+#cake-left img {
+  width: 100%;
+  max-width: 650px;
+  height: 71vh;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px #7a7979;
+}
+
+#cake-content {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 0 70px;
+  /* border: 1px solid black; */
+  /* height: 85vh; */
+  margin-top: 60px;
+}
+
+/* #cake-right {
+  align-self: flex-start;
+  border: 1px solid red;
+} */
+
+#price {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#heading {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+#rating {
+  font-size: 20px;
+}
+
+small {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+/* ------------------------------------------- */
+
+#messageOnCake {
+  margin-right: 15px;
+}
+
+#email {
+  margin-right: 15px;
+}
+
+#pincode {
+  margin-right: 15px;
+}
+
+#resetBtn {
+  margin-right: 15px;
+  width: 232px;
+}
+
+#orderNow {
+  width: 232px;
+}
+
+mat-form-field {
+  width: 232px;
+}
+
+mat-radio-button {
+  margin-right: 25px;
+}
+
+mat-radio-group {
+  position: relative;
+  top: -10px;
+}
+
+/* ------------------------------ */
+
+@media (max-width: 1215px) {
+  #cake-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #heading {
+    margin-top: 30px;
+  }
+
+  #cake-left img {
+    height: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  #cake-content {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 518px) {
+  #orderNow {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}

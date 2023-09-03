@@ -1,14 +1,23 @@
 #icons {
-    position: absolute;
-    right: 20px;
+  position: absolute;
+  right: 20px;
 }
 
 mat-icon {
-    margin-right: 15px;
-    cursor: pointer;
+  margin-right: 15px;
+  cursor: pointer;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
+}
+
+/* ------------------- */
+
+@media (max-width: 380px) {
+  a h1,
+  #icons {
+    display: none;
+  }
 }

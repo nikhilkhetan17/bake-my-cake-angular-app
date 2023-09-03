@@ -16,6 +16,8 @@ export class CakeCartComponent {
   cake?: Cake;
   cakeRequest: CakeRequest = {};
 
+  minDate: Date = new Date();
+
   constructor(
     private activatedRoute: ActivatedRoute,
     private cakeService: CakeService,
@@ -24,10 +26,24 @@ export class CakeCartComponent {
     private snackBar: MatSnackBar
   ) {}
 
-  
+  ngOnInit():void {
+    this.activatedRoute.paramMap.subscribe(param => {
+      let id = param.get("id") ?? "";
+      this.cakeService.getCake(+id).subscribe(data => {
+        this.cake = data;
+      })
+    })
+  }
 
-
-
-
-
+  makeRequest() {
+    this.cakeRequest.cakeName = this.cake?.name;
+    this.cakeRequestService.saveCakeRequest(this.cakeRequest).subscribe({
+      next: (data) => {
+        this.snackBar.open('Order Submitted', 'success', {
+          duration: 3000,
+        });
+        this.routeService.navigateToHome()
+      },
+    });
+  }
 }

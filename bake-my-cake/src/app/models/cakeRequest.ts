@@ -1,8 +1,11 @@
 export type CakeRequest = {
     id?: number;
-    phone?: number;
-    pinCode?: number;
-    deliveryDate?: string;
     messageOnCake?: string;
+    deliveryDate?: string;
     eggEggles?: string;
+    email?: string;
+    phone?: number;
+    pincode?: number;
+    address?: string;
+    cakeName?: string;
 }

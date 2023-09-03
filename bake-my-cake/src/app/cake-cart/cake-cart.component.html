@@ -1,1 +1,55 @@
-<p>cake-cart works!</p>
+<section id="cake-content">
+    <div id="cake-left">
+        <img src="../../assets/images/{{cake?.name}}.jpg" alt="{{cake?.name}}">
+    </div>
+    <div id="cake-right">
+        <h2 id="heading">{{cake?.name}}</h2>
+        <span id="rating">{{cake?.rating}}</span>
+        <img src="../../assets/images/rating.jpg" alt="">
+        <p id="price"><small>Rs</small>{{cake?.price}}</p>
+
+        <!---------------------------------------------------------------------------------->
+        <form id="form">
+            <mat-form-field appearance="outline" id="messageOnCake">
+                <mat-label>Message on cake</mat-label>
+                <input type="text" matInput name="messageOnCake" [(ngModel)]="cakeRequest.messageOnCake">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Delivery date</mat-label>
+                <input matInput [matDatepicker]="picker" [(ngModel)]="cakeRequest.deliveryDate" 
+                [min]="minDate"name="deliveryDate">
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field><br>
+
+            <mat-form-field appearance="outline" id="email">
+                <mat-label>Email</mat-label>
+                <input type="text" matInput name="email" [(ngModel)]="cakeRequest.email">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Phone</mat-label>
+                <input type="number" matInput name="customerPhone" [(ngModel)]="cakeRequest.phone">
+            </mat-form-field><br>
+
+            <mat-form-field appearance="outline" id="pincode">
+                <mat-label>Pincode</mat-label>
+                <input type="number" matInput name="pincode" [(ngModel)]="cakeRequest.pincode">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Address</mat-label>
+                <input type="text" matInput name="address" [(ngModel)]="cakeRequest.address">
+            </mat-form-field><br>
+
+            <mat-radio-group name="eggEggles" [(ngModel)]="cakeRequest.eggEggles">
+                <mat-radio-button value="withEgg">With Egg</mat-radio-button>
+                <mat-radio-button value="withoutEgg">Eggless</mat-radio-button>
+            </mat-radio-group><br>
+
+            <button mat-flat-button color="primary" type="reset" color="accent" id="resetBtn">Reset</button>
+            <button mat-flat-button color="primary" (click)="makeRequest()" id="orderNow">Order Now</button>
+        </form>
+    </div>
+</section>
