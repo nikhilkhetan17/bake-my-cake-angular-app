@@ -1,9 +1,11 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeViewComponent } from './home-view/home-view.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CakeCartComponent } from './cake-cart/cake-cart.component';
 import { CakeRequestsComponent } from './cake-requests/cake-requests.component';
+import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './services/auth.guard';
 
 const routes: Routes = [
   {
@@ -17,6 +19,11 @@ const routes: Routes = [
   {
     path: "cake-requests",
     component: CakeRequestsComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: "login",
+    component: LoginComponent,
   },
   {
     path: '',

@@ -30,6 +30,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatTableModule} from '@angular/material/table';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import {MatTableModule} from '@angular/material/table';
     NavigationPanelComponent,
     NotFoundComponent,
     CakeCartComponent,
-    CakeRequestsComponent
+    CakeRequestsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
