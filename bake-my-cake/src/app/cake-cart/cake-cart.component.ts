@@ -7,6 +7,8 @@ import { CakeRequestService } from '../services/cake-request.service';
 import { CakeService } from '../services/cake.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
+import { formatDate } from '@angular/common';
+
 @Component({
   selector: 'app-cake-cart',
   templateUrl: './cake-cart.component.html',
@@ -24,25 +26,33 @@ export class CakeCartComponent {
     private cakeRequestService: CakeRequestService,
     private routeService: RouteService,
     private snackBar: MatSnackBar
-  ) {}
+  ) {
+    this.minDate.setDate(this.minDate.getDate() + 1);
+  }
 
-  ngOnInit():void {
-    this.activatedRoute.paramMap.subscribe(param => {
-      let id = param.get("id") ?? "";
-      this.cakeService.getCake(+id).subscribe(data => {
+  ngOnInit(): void {
+    this.activatedRoute.paramMap.subscribe((param) => {
+      let id = param.get('id') ?? '';
+      this.cakeService.getCake(+id).subscribe((data) => {
         this.cake = data;
-      })
-    })
+      });
+    });
   }
 
   makeRequest() {
     this.cakeRequest.cakeName = this.cake?.name;
+    const deliveryDate =
+      this.cakeRequest.deliveryDate instanceof Date
+        ? this.cakeRequest.deliveryDate
+        : new Date(); // check this line with "" at end
+    const formattedDate = formatDate(deliveryDate, 'dd-MM-yyyy', 'en-US');
+    this.cakeRequest.deliveryDate = formattedDate;
     this.cakeRequestService.saveCakeRequest(this.cakeRequest).subscribe({
       next: (data) => {
         this.snackBar.open('Order Submitted', 'success', {
           duration: 3000,
         });
-        this.routeService.navigateToHome()
+        this.routeService.navigateToHome();
       },
     });
   }

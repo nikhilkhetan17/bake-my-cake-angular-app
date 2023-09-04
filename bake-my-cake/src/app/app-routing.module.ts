@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeViewComponent } from './home-view/home-view.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CakeCartComponent } from './cake-cart/cake-cart.component';
+import { CakeRequestsComponent } from './cake-requests/cake-requests.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: "order-view/:id",
     component: CakeCartComponent,
+  },
+  {
+    path: "cake-requests",
+    component: CakeRequestsComponent,
   },
   {
     path: '',

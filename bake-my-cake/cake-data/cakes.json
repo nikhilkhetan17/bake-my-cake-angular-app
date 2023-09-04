@@ -128,6 +128,61 @@
     }
   ],
   "cakeRequests": [
-    
+    {
+      "messageOnCake": "Nikhil",
+      "deliveryDate": "2023-09-04",
+      "email": "nikhilkhetan22@gmail.com",
+      "phone": 8871215569,
+      "pincode": 492001,
+      "address": "13-street, raipur",
+      "eggEggles": "withoutEgg",
+      "cakeName": "Cherry Jelly Cheesecake",
+      "id": 1
+    },
+    {
+      "messageOnCake": "",
+      "deliveryDate": "2023-09-05",
+      "email": "alice@example.com",
+      "phone": 1234567890,
+      "pincode": 123456,
+      "address": "42 Elm Street, Springfield",
+      "eggEggles": "withEgg",
+      "cakeName": "Brownies Different Flavor",
+      "id": 2
+    },
+    {
+      "deliveryDate": "2023-09-05",
+      "email": "nikhilkhetan22@gmail.com",
+      "phone": 987654321,
+      "pincode": 492006,
+      "address": "asdasfdsfdsf",
+      "eggEggles": "withoutEgg",
+      "cakeName": "Butter Cookies",
+      "id": 3
+    },
+    {
+      "deliveryDate": "05-09-2023",
+      "email": "nikhilkhetan22@gmail.com",
+      "phone": 56546456456,
+      "pincode": 45654,
+      "address": "456456456",
+      "cakeName": "Brownies Different Flavor",
+      "id": 4
+    },
+    {
+      "cakeName": "Berries Summer Cupcakes",
+      "deliveryDate": "04-09-2023",
+      "id": 5
+    },
+    {
+      "deliveryDate": "05-09-2023",
+      "cakeName": "Berries Summer Cupcakes",
+      "id": 6
+    },
+    {
+      "cakeName": "Berries Summer Cupcakes",
+      "deliveryDate": "04-09-2023",
+      "id": 7
+    }
   ]
 }

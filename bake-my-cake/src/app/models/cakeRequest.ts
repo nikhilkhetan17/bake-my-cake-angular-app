@@ -1,7 +1,7 @@
 export type CakeRequest = {
     id?: number;
     messageOnCake?: string;
-    deliveryDate?: string;
+    deliveryDate?: Date | string;
     eggEggles?: string;
     email?: string;
     phone?: number;
