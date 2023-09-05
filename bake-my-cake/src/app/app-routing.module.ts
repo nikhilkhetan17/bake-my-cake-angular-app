@@ -6,6 +6,7 @@ import { CakeCartComponent } from './cake-cart/cake-cart.component';
 import { CakeRequestsComponent } from './cake-requests/cake-requests.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './services/auth.guard';
+import { CanDeactivateGuard } from './services/can-deactivate.guard';
 
 const routes: Routes = [
   {
@@ -15,11 +16,12 @@ const routes: Routes = [
   {
     path: "order-view/:id",
     component: CakeCartComponent,
+    canDeactivate: [CanDeactivateGuard],
   },
   {
     path: "cake-requests",
     component: CakeRequestsComponent,
-    canActivate: [AuthGuard]
+    canActivate: [AuthGuard],
   },
   {
     path: "login",

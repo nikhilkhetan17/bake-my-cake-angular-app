@@ -30,11 +30,24 @@ export class CakeCartComponent {
     this.minDate.setDate(this.minDate.getDate() + 1);
   }
 
+  editStatus: boolean = true;
+
+  canDeactivate() {
+    if(!this.editStatus) {
+      let response = confirm("Changes are not saved. Do you still want to leave");
+      return response;
+    } else {
+      return true;
+    }
+    
+  }
+
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((param) => {
       let id = param.get('id') ?? '';
       this.cakeService.getCake(+id).subscribe((data) => {
         this.cake = data;
+        this.editStatus = false;
       });
     });
   }
@@ -52,8 +65,12 @@ export class CakeCartComponent {
         this.snackBar.open('Order Submitted', 'success', {
           duration: 3000,
         });
+        this.editStatus = true;
         this.routeService.navigateToHome();
       },
+      error: err => {
+        alert("Failed to submit cake request");
+      }
     });
   }
 }
