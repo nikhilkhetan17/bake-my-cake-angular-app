@@ -7,9 +7,10 @@ import { CakeService } from '../services/cake.service';
   templateUrl: './home-view.component.html',
   styleUrls: ['./home-view.component.css'],
 })
+
 export class HomeViewComponent {
   cakes: Cake[] = [];
-  filterCat: string = "";
+  categoryFilter: string = "";
 
   constructor(private cakeService: CakeService) {}
 
@@ -37,12 +38,13 @@ export class HomeViewComponent {
       },
     });
   }
+
   onFilter(filter: string) {
-    this.filterCat = filter;
+    this.categoryFilter = filter;
     this.cakeService.getCakes().subscribe({
       next: data => {
-        this.cakes = data.filter(cake => cake.category === this.filterCat)
-        if(this.filterCat === "all") {
+        this.cakes = data.filter(cake => cake.category === this.categoryFilter)
+        if(this.categoryFilter === "all") {
           this.cakes = data;
         }
       }

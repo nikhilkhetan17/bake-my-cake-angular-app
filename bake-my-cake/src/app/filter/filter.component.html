@@ -1,5 +1,6 @@
-<mat-form-field appearance="fill">
-    <mat-select [(ngModel)]="filterCategory" (ngModelChange)="filter()">
+<mat-form-field appearance="outline">
+    <mat-label>Filter</mat-label>
+    <mat-select [(ngModel)]="filterCategory" (ngModelChange)="Onfilter()">
         <mat-option value="all">All</mat-option>
         <mat-option value="cake">Cakes</mat-option>
         <mat-option value="cookie">Cookies</mat-option>

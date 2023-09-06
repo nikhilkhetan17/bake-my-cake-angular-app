@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CakeRequest } from '../models/cakeRequest';
 import { CakeRequestService } from '../services/cake-request.service';
-import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-cake-requests',
@@ -21,7 +20,6 @@ export class CakeRequestsComponent {
   ];
   
   cakeRequests: CakeRequest[] = [];
-  dataSource: any;
 
   constructor(private cakeRequestService: CakeRequestService) {}
 
@@ -29,7 +27,6 @@ export class CakeRequestsComponent {
     this.cakeRequestService.getAllCakeRequests().subscribe({
       next: (data) => {
         this.cakeRequests = data;
-        this.dataSource = new MatTableDataSource(data);
       },
       error: (err) => {
         alert(err);
@@ -37,8 +34,4 @@ export class CakeRequestsComponent {
     });
   }
 
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource.cakeName = filterValue.trim().toLowerCase();
-  }
 }

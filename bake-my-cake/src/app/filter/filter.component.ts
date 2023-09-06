@@ -15,7 +15,7 @@ export class FilterComponent {
     this.filteredCategory.emit(this.filterCategory);
   }
 
-  filter() {
+  Onfilter() {
     if(!this.filterCategory) {
       this.filterCategory = "all";
     } else {
