@@ -6,9 +6,8 @@
       "price": 299,
       "rating": 4.5,
       "earliestDelivery": "Today",
-      "quantity": "Half kg",
+      "quantity": "3 Cup-cakes",
       "category": "cupCake"
-      
     },
     {
       "id": 2,
@@ -16,7 +15,7 @@
       "price": 399,
       "rating": 4.7,
       "earliestDelivery": "Today",
-      "quantity": "3 pieces",
+      "quantity": "5 Brownies",
       "category": "brownie"
     },
     {
@@ -25,7 +24,7 @@
       "price": 199,
       "rating": 4.6,
       "earliestDelivery": "Today",
-      "quantity": "9 pieces",
+      "quantity": "10 Cookies",
       "category": "cookie"
     },
     {
@@ -52,7 +51,7 @@
       "price": 599,
       "rating": 4.4,
       "earliestDelivery": "Today",
-      "quantity": "10 pieces",
+      "quantity": "10 Bonbons",
       "category": "cookie"
     },
     {
@@ -61,7 +60,7 @@
       "price": 499,
       "rating": 4.5,
       "earliestDelivery": "Today",
-      "quantity": "10 piece",
+      "quantity": "10 Cookies",
       "category": "cookie"
     },
     {
@@ -70,7 +69,7 @@
       "price": 199,
       "rating": 4.8,
       "earliestDelivery": "Today",
-      "quantity": "2 piece",
+      "quantity": "2 Cup-cakes",
       "category": "cupCake"
     },
     {
@@ -79,6 +78,7 @@
       "price": 299,
       "rating": 4.6,
       "earliestDelivery": "Today",
+      "quantity": "Half kg",
       "category": "cake"
     },
     {
@@ -87,6 +87,7 @@
       "price": 399,
       "rating": 4.9,
       "earliestDelivery": "Today",
+      "quantity": "Half kg",
       "category": "cake"
     },
     {
@@ -95,6 +96,7 @@
       "price": 599,
       "rating": 4.5,
       "earliestDelivery": "Today",
+      "quantity": "Half kg",
       "category": "cake"
     },
     {
@@ -103,6 +105,7 @@
       "price": 199,
       "rating": 4.7,
       "earliestDelivery": "Today",
+      "quantity": "3 Cup-cakes",
       "category": "cupCake"
     },
     {
@@ -111,6 +114,7 @@
       "price": 599,
       "rating": 4.8,
       "earliestDelivery": "Today",
+      "quantity": "Half kg",
       "category": "cake"
     },
     {
@@ -119,6 +123,7 @@
       "price": 199,
       "rating": 4.3,
       "earliestDelivery": "Today",
+      "quantity": "2 Brownies",
       "category": "brownie"
     },
     {
@@ -127,6 +132,7 @@
       "price": 399,
       "rating": 4.9,
       "earliestDelivery": "Today",
+      "quantity": "Half kg",
       "category": "cake"
     },
     {
@@ -135,6 +141,7 @@
       "price": 299,
       "rating": 4.5,
       "earliestDelivery": "Today",
+      "quantity": "3 Muffins",
       "category": "cupCake"
     },
     {
@@ -143,6 +150,7 @@
       "price": 249,
       "rating": 4.7,
       "earliestDelivery": "Today",
+      "quantity": "4 Muffins",
       "category": "cupCake"
     },
     {
@@ -151,65 +159,118 @@
       "price": 199,
       "rating": 4.6,
       "earliestDelivery": "Today",
+      "quantity": "2 Cup-cakes",
       "category": "cupCake"
     }
   ],
   "cakeRequests": [
     {
-      "messageOnCake": "Nikhil",
-      "deliveryDate": "2023-09-04",
-      "email": "nikhilkhetan22@gmail.com",
-      "phone": 8871215569,
-      "pincode": 492001,
-      "address": "13-street, raipur",
+      "messageOnCake": "James",
+      "deliveryDate": "06-09-2023",
+      "email": "test123@gmail.com",
+      "phone": 9653214505,
+      "pincode": 963654,
+      "address": "123, washington DC",
       "eggEggles": "withoutEgg",
       "cakeName": "Cherry Jelly Cheesecake",
       "id": 1
     },
     {
-      "messageOnCake": "",
-      "deliveryDate": "2023-09-05",
+      "messageOnCake": "Alice",
+      "deliveryDate": "05-09-2023",
       "email": "alice@example.com",
       "phone": 1234567890,
       "pincode": 123456,
-      "address": "42 Elm Street, Springfield",
+      "address": "123 Main St, Anytown",
       "eggEggles": "withEgg",
-      "cakeName": "Brownies Different Flavor",
+      "cakeName": "Chocolate Summer Berries",
       "id": 2
     },
     {
-      "deliveryDate": "2023-09-05",
-      "email": "nikhilkhetan22@gmail.com",
-      "phone": 987654321,
-      "pincode": 492006,
-      "address": "asdasfdsfdsf",
+      "messageOnCake": "Bob",
+      "deliveryDate": "06-09-2023",
+      "email": "bob@example.com",
+      "phone": 9876543210,
+      "pincode": 987654,
+      "address": "456 Elm St, Somewhere",
       "eggEggles": "withoutEgg",
-      "cakeName": "Butter Cookies",
+      "cakeName": "Monster Theme Cake",
       "id": 3
     },
     {
-      "deliveryDate": "05-09-2023",
-      "email": "nikhilkhetan22@gmail.com",
-      "phone": 56546456456,
-      "pincode": 45654,
-      "address": "456456456",
-      "cakeName": "Brownies Different Flavor",
+      "messageOnCake": "Sarah",
+      "deliveryDate": "07-09-2023",
+      "email": "sarah@example.com",
+      "phone": 5551234567,
+      "pincode": 543210,
+      "address": "789 Oak Rd, Anotherplace",
+      "eggEggles": "withEgg",
+      "cakeName": "Monster Theme Cake",
       "id": 4
     },
     {
-      "cakeName": "Berries Summer Cupcakes",
-      "deliveryDate": "04-09-2023",
+      "messageOnCake": "David",
+      "deliveryDate": "08-09-2023",
+      "email": "david@example.com",
+      "phone": 7899876543,
+      "pincode": 876543,
+      "address": "101 Pine Ave, Elsewhere",
+      "eggEggles": "withoutEgg",
+      "cakeName": "Fruit Cake",
       "id": 5
     },
     {
-      "deliveryDate": "05-09-2023",
-      "cakeName": "Berries Summer Cupcakes",
+      "messageOnCake": "Linda",
+      "deliveryDate": "09-09-2023",
+      "email": "linda@example.com",
+      "phone": 1237894560,
+      "pincode": 987123,
+      "address": "555 Maple Ln, Somewhen",
+      "eggEggles": "withEgg",
+      "cakeName": "Fruit Cake",
       "id": 6
     },
     {
-      "cakeName": "Berries Summer Cupcakes",
-      "deliveryDate": "04-09-2023",
+      "messageOnCake": "Chris",
+      "deliveryDate": "10-09-2023",
+      "email": "chris@example.com",
+      "phone": 4567891230,
+      "pincode": 456789,
+      "address": "777 Cedar St, Nowhere",
+      "eggEggles": "withoutEgg",
+      "cakeName": "Cherry Jelly Cheesecake",
       "id": 7
+    },
+    {
+      "messageOnCake": "Emma",
+      "deliveryDate": "11-09-2023",
+      "email": "emma@example.com",
+      "phone": 7890123456,
+      "pincode": 789012,
+      "address": "888 Birch Rd, Anywhen",
+      "eggEggles": "withEgg",
+      "cakeName": "Cherry Jelly Cheesecake",
+      "id": 8
+    },
+    {
+      "messageOnCake": "Michael",
+      "deliveryDate": "12-09-2023",
+      "email": "michael@example.com",
+      "phone": 1234567890,
+      "pincode": 123456,
+      "address": "999 Willow Ave, Everyplace",
+      "eggEggles": "withoutEgg",
+      "cakeName": "Berries Summer Cupcakes",
+      "id": 9
+    },
+    {
+      "deliveryDate": "06-09-2023",
+      "email": "olivia@example.com",
+      "phone": 9876543210,
+      "pincode": 987654,
+      "address": "111 Rose Ln, Nowhen",
+      "cakeName": "Butter Cookies",
+      "id": 10
     }
   ]
 }

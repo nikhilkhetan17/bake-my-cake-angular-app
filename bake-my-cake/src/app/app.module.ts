@@ -11,6 +11,7 @@ import { HomeViewComponent } from './home-view/home-view.component';
 import { CakeCardComponent } from './cake-card/cake-card.component';
 import { CakeCartComponent } from './cake-cart/cake-cart.component';
 import { CakeRequestsComponent } from './cake-requests/cake-requests.component';
+import { FilterComponent } from './filter/filter.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
@@ -31,7 +32,7 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatTableModule} from '@angular/material/table';
 import { LoginComponent } from './login/login.component';
-
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { LoginComponent } from './login/login.component';
     NotFoundComponent,
     CakeCartComponent,
     CakeRequestsComponent,
-    LoginComponent
+    LoginComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +68,8 @@ import { LoginComponent } from './login/login.component';
     MatDatepickerModule,
     MatNativeDateModule,
     MatRadioModule,
-    MatTableModule
+    MatTableModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

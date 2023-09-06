@@ -9,6 +9,7 @@ import { CakeService } from '../services/cake.service';
 })
 export class HomeViewComponent {
   cakes: Cake[] = [];
+  filterCat: string = "";
 
   constructor(private cakeService: CakeService) {}
 
@@ -35,5 +36,16 @@ export class HomeViewComponent {
         }
       },
     });
+  }
+  onFilter(filter: string) {
+    this.filterCat = filter;
+    this.cakeService.getCakes().subscribe({
+      next: data => {
+        this.cakes = data.filter(cake => cake.category === this.filterCat)
+        if(this.filterCat === "all") {
+          this.cakes = data;
+        }
+      }
+    })
   }
 }
