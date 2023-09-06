@@ -10,10 +10,13 @@
 
         <!---------------------------------------------------------------------------------->
         <form id="form" (ngSubmit)="makeRequest(orderRequestForm)" #orderRequestForm="ngForm">
-            <mat-form-field appearance="outline" id="messageOnCake">
-                <mat-label>Message on cake</mat-label>
-                <input type="text" matInput name="messageOnCake" [(ngModel)]="cakeRequest.messageOnCake">
-            </mat-form-field>
+            
+            <!-- <ng-container *ngIf="cake?.category === 'cake'"> -->
+                <mat-form-field appearance="outline" id="messageOnCake">
+                    <mat-label>Message on cake</mat-label>
+                    <input type="text" matInput name="messageOnCake" [(ngModel)]="cakeRequest.messageOnCake" [disabled]="cake?.category !== 'cake'">
+                </mat-form-field>
+            <!-- </ng-container> -->
 
             <mat-form-field appearance="outline">
                 <mat-label>Delivery date</mat-label>
@@ -27,20 +30,26 @@
 
             <mat-form-field appearance="outline" id="email">
                 <mat-label>Email</mat-label>
-                <input type="text" matInput [(ngModel)]="cakeRequest.email" name="email" #email="ngModel" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+                <input type="text" matInput [(ngModel)]="cakeRequest.email" name="email" #email="ngModel" required pattern="^[a-zA-Z_][a-zA-Z0-9_]*@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$">
 
                 <mat-error *ngIf="email.errors?.['required']">Email id is required</mat-error>
                 <mat-error *ngIf="email.errors?.['pattern']">Enter valid email id</mat-error>
             </mat-form-field>
 
-            <mat-form-field appearance="outline">
+            <mat-form-field appearance="outline" id="phone">
                 <mat-label>Phone</mat-label>
-                <input type="number" matInput name="customerPhone" [(ngModel)]="cakeRequest.phone">
+                <input type="number" matInput name="phone" [(ngModel)]="cakeRequest.phone" required pattern="^[789]\d{9}$" #phone="ngModel">
+
+                <mat-error *ngIf="phone.errors?.['required']">Phone number is required</mat-error>
+                <mat-error *ngIf="phone.errors?.['pattern']">Enter valid phone number containing 10 digits starting with 7/8/9</mat-error>
             </mat-form-field><br>
 
             <mat-form-field appearance="outline" id="pincode">
                 <mat-label>Pincode</mat-label>
-                <input type="number" matInput name="pincode" [(ngModel)]="cakeRequest.pincode">
+                <input type="number" matInput [(ngModel)]="cakeRequest.pincode" name="pincode" #pincode="ngModel" pattern="^\d{5}(?:\d{1})?$" required>
+
+                <mat-error *ngIf="pincode.errors?.['required']">Pincode is required</mat-error>
+                <mat-error *ngIf="pincode.errors?.['pattern']">Pincode should be 5-digit or 6-digit</mat-error>
             </mat-form-field>
 
             <mat-form-field appearance="outline">
@@ -48,13 +57,15 @@
                 <input type="text" matInput name="address" [(ngModel)]="cakeRequest.address">
             </mat-form-field><br>
 
-            <mat-radio-group name="eggEggles" [(ngModel)]="cakeRequest.eggEggles">
-                <mat-radio-button value="withEgg">With Egg</mat-radio-button>
-                <mat-radio-button value="withoutEgg">Eggless</mat-radio-button>
-            </mat-radio-group><br>
-
+            <ng-container *ngIf="cake?.category === 'cake' || cake?.category === 'cupCake'">
+                <mat-radio-group name="eggEggles" [(ngModel)]="cakeRequest.eggEggles">
+                    <mat-radio-button value="withEgg">With Egg</mat-radio-button>
+                    <mat-radio-button value="withoutEgg">Eggless</mat-radio-button>
+                </mat-radio-group><br>
+            </ng-container>
+                
             <button mat-flat-button color="primary" type="reset" color="accent" id="resetBtn">Reset</button>
-            <button mat-flat-button color="primary" type="submit" id="orderNow"         [disabled]="orderRequestForm.invalid">Order Now</button>
+            <button mat-flat-button color="primary" type="submit" id="orderNow" [disabled]="orderRequestForm.invalid">Order Now</button>
         </form>
     </div>
 </section>

@@ -1,7 +1,7 @@
 #cake-left img {
   width: 100%;
   max-width: 650px;
-  height: 71vh;
+  height: 72vh;
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 1px 1px 10px #7a7979;
@@ -9,7 +9,7 @@
 
 #cake-content {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   gap: 0 70px;
   /* border: 1px solid black; */
@@ -25,11 +25,11 @@
 #price {
   font-size: 30px;
   margin-top: 20px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 #heading {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   font-size: 30px;
 }
 
@@ -57,17 +57,18 @@ small {
   margin-right: 15px;
 }
 
+mat-form-field {
+  width: 250px;
+  margin-bottom: 5px;
+}
+
 #resetBtn {
   margin-right: 15px;
-  width: 232px;
+  width: 250px;
 }
 
 #orderNow {
-  width: 232px;
-}
-
-mat-form-field {
-  width: 232px;
+  width: 250px;
 }
 
 mat-radio-button {
@@ -78,6 +79,11 @@ mat-radio-group {
   position: relative;
   top: -10px;
 }
+
+#email, #phone {
+  margin-bottom: 30px;
+}
+
 
 /* ------------------------------ */
 

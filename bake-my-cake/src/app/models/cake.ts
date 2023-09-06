@@ -4,4 +4,6 @@ export type Cake = {
   price?: string;
   rating?: string;
   earliestDelivery?: string;
+  category?: string;
+  quantity?: string;
 };
