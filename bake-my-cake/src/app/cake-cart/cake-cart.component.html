@@ -9,7 +9,7 @@
         <p id="price"><small>Rs</small>{{cake?.price}}</p>
 
         <!---------------------------------------------------------------------------------->
-        <form id="form">
+        <form id="form" (ngSubmit)="makeRequest(orderRequestForm)" #orderRequestForm="ngForm">
             <mat-form-field appearance="outline" id="messageOnCake">
                 <mat-label>Message on cake</mat-label>
                 <input type="text" matInput name="messageOnCake" [(ngModel)]="cakeRequest.messageOnCake">
@@ -18,14 +18,19 @@
             <mat-form-field appearance="outline">
                 <mat-label>Delivery date</mat-label>
                 <input matInput [matDatepicker]="picker" [(ngModel)]="cakeRequest.deliveryDate" 
-                [min]="minDate"name="deliveryDate">
+                [min]="minDate" required name="deliveryDate" #deliveryDate="ngModel">
                 <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
+                
+                <mat-error *ngIf="deliveryDate.errors?.['required']">Delivery date is required</mat-error>
             </mat-form-field><br>
 
             <mat-form-field appearance="outline" id="email">
                 <mat-label>Email</mat-label>
-                <input type="text" matInput name="email" [(ngModel)]="cakeRequest.email">
+                <input type="text" matInput [(ngModel)]="cakeRequest.email" name="email" #email="ngModel" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+
+                <mat-error *ngIf="email.errors?.['required']">Email id is required</mat-error>
+                <mat-error *ngIf="email.errors?.['pattern']">Enter valid email id</mat-error>
             </mat-form-field>
 
             <mat-form-field appearance="outline">
@@ -49,7 +54,7 @@
             </mat-radio-group><br>
 
             <button mat-flat-button color="primary" type="reset" color="accent" id="resetBtn">Reset</button>
-            <button mat-flat-button color="primary" (click)="makeRequest()" id="orderNow">Order Now</button>
+            <button mat-flat-button color="primary" type="submit" id="orderNow"         [disabled]="orderRequestForm.invalid">Order Now</button>
         </form>
     </div>
 </section>

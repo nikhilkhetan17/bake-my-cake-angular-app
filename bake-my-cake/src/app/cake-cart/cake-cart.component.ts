@@ -52,7 +52,8 @@ export class CakeCartComponent {
     });
   }
 
-  makeRequest() {
+  makeRequest(orderRequestForm: any) {
+    console.log(orderRequestForm.value);
     this.cakeRequest.cakeName = this.cake?.name;
     const deliveryDate =
       this.cakeRequest.deliveryDate instanceof Date
@@ -67,6 +68,7 @@ export class CakeCartComponent {
         });
         this.editStatus = true;
         this.routeService.navigateToHome();
+        // orderRequestForm.reserForm();
       },
       error: err => {
         alert("Failed to submit cake request");
