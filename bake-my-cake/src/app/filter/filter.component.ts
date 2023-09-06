@@ -6,20 +6,20 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./filter.component.css']
 })
 export class FilterComponent {
-  filterCategory: string = "all"
+  filterByCategory: string = "all"
 
   @Output()
   filteredCategory: EventEmitter<string> = new EventEmitter<string>();
 
   ngOnInit(): void{
-    this.filteredCategory.emit(this.filterCategory);
+    this.filteredCategory.emit(this.filterByCategory);
   }
 
   Onfilter() {
-    if(!this.filterCategory) {
-      this.filterCategory = "all";
+    if(!this.filterByCategory) {
+      this.filterByCategory = "all";
     } else {
-      this.filteredCategory.emit(this.filterCategory)
+      this.filteredCategory.emit(this.filterByCategory)
     }
   }
 }
