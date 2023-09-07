@@ -62,8 +62,9 @@ export class CakeCartComponent {
           duration: 3000,
         });
         this.submitStatus = true;
-        this.routeService.navigateToHome();
-        // orderRequestForm.reserForm();
+        this.routeService.navigateToOrderSuccess();
+        // this.routeService.navigateToHome();
+        // orderRequestForm.resetForm();
       },
       error: err => {
         alert("Failed to submit cake request");

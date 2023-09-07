@@ -12,3 +12,11 @@
     align-items: flex-end;
     justify-content: space-around;
 }
+
+@media (max-width: 660px) {
+    #searchFilter {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20px;        
+    }
+}

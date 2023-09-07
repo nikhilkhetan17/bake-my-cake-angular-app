@@ -33,6 +33,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatTableModule} from '@angular/material/table';
 import { LoginComponent } from './login/login.component';
 import {MatSelectModule} from '@angular/material/select';
+import { OrderSuccessComponent } from './order-success/order-success.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import {MatSelectModule} from '@angular/material/select';
     CakeCartComponent,
     CakeRequestsComponent,
     LoginComponent,
-    FilterComponent
+    FilterComponent,
+    OrderSuccessComponent
   ],
   imports: [
     BrowserModule,

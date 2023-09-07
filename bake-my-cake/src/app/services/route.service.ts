@@ -19,4 +19,8 @@ export class RouteService {
   navigateToLoginView() {
     this.router.navigate(['login']);
   }
+
+  navigateToOrderSuccess() {
+    this.router.navigate(["order-success"])
+  }
 }

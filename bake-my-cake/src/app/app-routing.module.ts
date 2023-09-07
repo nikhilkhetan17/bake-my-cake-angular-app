@@ -7,6 +7,7 @@ import { CakeRequestsComponent } from './cake-requests/cake-requests.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './services/auth.guard';
 import { CanDeactivateGuard } from './services/can-deactivate.guard';
+import { OrderSuccessComponent } from './order-success/order-success.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: "login",
     component: LoginComponent,
+  },
+  {
+    path: "order-success",
+    component: OrderSuccessComponent,
   },
   {
     path: '',
