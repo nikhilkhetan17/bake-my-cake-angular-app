@@ -11,9 +11,9 @@ export class FilterComponent {
   @Output()
   filteredCategory: EventEmitter<string> = new EventEmitter<string>();
 
-  ngOnInit(): void{
-    this.filteredCategory.emit(this.filterByCategory);
-  }
+  // ngOnInit(): void{
+  //   this.filteredCategory.emit(this.filterByCategory);
+  // }
 
   Onfilter() {
     if(!this.filterByCategory) {

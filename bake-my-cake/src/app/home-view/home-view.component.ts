@@ -20,7 +20,7 @@ export class HomeViewComponent {
         this.cakes = data;
       },
       error: (error) => {
-        alert('Failed to fetch Cakes due to Server Error !!');
+        alert('Failed to fetch cakes due to Server Error !!');
       },
     });
   }
