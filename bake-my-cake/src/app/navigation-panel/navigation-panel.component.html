@@ -23,10 +23,10 @@
         mat-icon-button (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span><app-header></app-header></span>
+      <span><app-header [loggedIn]=isLoggedIn></app-header></span>
     </mat-toolbar>
     <!-- Add Content Here -->
     <!-- <app-home-view></app-home-view> -->
-    <router-outlet></router-outlet>
+    <router-outlet (activate)="onLoggedIn()"></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -5,6 +5,9 @@
             <a routerLink="/home"><mat-icon matTooltip="Home">home</mat-icon></a>
             <mat-icon routerLink="/cake-requests" matTooltip="Cake requests">assignment</mat-icon>
             <a routerLink="/"><mat-icon matTooltip="Settings">settings</mat-icon></a>
+
+            <mat-icon *ngIf="loggedIn!==true" matTooltip="login" routerLink="/login">login</mat-icon>
+            <mat-icon *ngIf="loggedIn===true" matTooltip="logout" (click)="logout()">logout</mat-icon>
         </div>
     </mat-toolbar>
 </div>

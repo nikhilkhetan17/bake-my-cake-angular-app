@@ -10,9 +10,9 @@ export class AuthService {
     this.isLoggedIn = cakeRequestCode === 'admin';
   }
 
-  // logout() {
-  //   this.isLoggedIn = false;
-  // }
+  logout() {
+    this.isLoggedIn = false;
+  }
 
   constructor() {}
 }
