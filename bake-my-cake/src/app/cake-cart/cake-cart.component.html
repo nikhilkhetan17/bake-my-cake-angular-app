@@ -53,7 +53,7 @@
             </mat-form-field>
 
             <mat-form-field appearance="outline">
-                <mat-label>Address</mat-label>
+                <mat-label>Enter complete address</mat-label>
                 <input type="text" matInput name="address" [(ngModel)]="cakeRequest.address" required minlength="10" #address="ngModel">
                 <mat-error *ngIf="address.errors?.['required']">Address is required</mat-error>
                 <mat-error *ngIf="address.errors?.['minlength']">Address must have minimum length of {{address.errors?.['minlength']?.requiredLength}} characters</mat-error>
