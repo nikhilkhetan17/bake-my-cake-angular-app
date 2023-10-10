@@ -47,9 +47,20 @@ export class CakeCartComponent {
     });
   }
 
+  // Calculate Total cake price
+  calculateTotalPrice(): number {
+    if (this.cake && this.cake.price && this.cakeRequest.quantity) {
+      return this.cake.price * this.cakeRequest.quantity;
+    }
+    return 0; // Default to 0 if data is not available
+    // return (this.cake?.price ?? 0) * (this.cakeRequest.quantity ?? 0);
+  }
+
   makeRequest(orderRequestForm: any) {
     console.log(orderRequestForm.value);
     this.cakeRequest.cakeName = this.cake?.name;
+    this.cakeRequest.price = this.cake?.price;
+    this.cakeRequest.totalPrice = this.calculateTotalPrice();
     const deliveryDate =
       this.cakeRequest.deliveryDate instanceof Date
         ? this.cakeRequest.deliveryDate

@@ -6,7 +6,7 @@
         <h2 id="heading">{{cake?.name}}</h2>
         <span id="rating">{{cake?.rating}}</span>
         <img src="../../assets/images/rating.jpg" alt="">
-        <p id="price"><small>Rs</small>{{cake?.price}} <small>for {{cake?.quantity}}</small></p>
+        <p id="price"><small>Rs</small>{{cake?.price}} <small>{{cake?.desc}}</small></p>
 
         <!---------------------------------------------------------------------------------->
         <form id="form" (ngSubmit)="makeRequest(orderRequestForm)" #orderRequestForm="ngForm">
@@ -59,14 +59,28 @@
                 <mat-error *ngIf="address.errors?.['minlength']">Address must have minimum length of {{address.errors?.['minlength']?.requiredLength}} characters</mat-error>
             </mat-form-field><br>
 
-            <ng-container *ngIf="cake?.category === 'cake' || cake?.category === 'cupCake'">
+            <mat-form-field appearance="outline" id="quantity">
+                <mat-label>Quantity</mat-label>
+                <input type="number" matInput name="quantity" [(ngModel)]="cakeRequest.quantity" required min="1" #quantity="ngModel">
+                <mat-error *ngIf="quantity.errors?.['required']">Quantity is required</mat-error>
+                <mat-error *ngIf="quantity.errors?.['min']">Quantity cannot be less than 1</mat-error>
+            </mat-form-field>
+              
+            <!-- <p id="price"><small>Rs</small>{{ calculateTotalPrice() }} <small>for {{ cakeRequest.quantity }}</small></p> -->
+            <!-- Total Price -->
+            <mat-form-field appearance="outline">
+                <mat-label>Total Price</mat-label>
+                <input type="text" matInput [value]="calculateTotalPrice()" readonly>
+              </mat-form-field><br>
+
+            <!-- <ng-container *ngIf="cake?.category === 'cake' || cake?.category === 'cupCake'"> -->
                 <mat-radio-group name="eggEggles" [(ngModel)]="cakeRequest.eggEggles" required #eggEggles="ngModel">
                     <mat-radio-button value="withEgg">With Egg</mat-radio-button>
                     <mat-radio-button value="withoutEgg">Eggless</mat-radio-button>
                     <mat-error *ngIf="eggEggles.errors?.['required']">Please select an option</mat-error>
                 </mat-radio-group><br>
-            </ng-container>
-                
+            <!-- </ng-container><br> -->
+
             <button mat-flat-button color="primary" type="reset" color="accent" id="resetBtn">Reset</button>
             <button mat-flat-button color="primary" type="submit" id="orderNow" [disabled]="orderRequestForm.invalid">Order Now</button>
         </form>

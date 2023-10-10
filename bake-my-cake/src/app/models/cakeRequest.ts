@@ -8,4 +8,8 @@ export type CakeRequest = {
     pincode?: number;
     address?: string;
     cakeName?: string;
+    quantity?: number;
+    price?: number;
+    totalPrice?: number;
+    
 }

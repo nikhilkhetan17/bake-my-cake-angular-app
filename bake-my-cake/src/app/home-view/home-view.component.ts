@@ -30,7 +30,7 @@ export class HomeViewComponent {
       next: (data) => {
         if (cakeName || cakeName !== '') {
           this.cakes = this.cakes.filter((cake) =>
-            cake.name?.toLowerCase().startsWith(cakeName.toLowerCase())
+            cake.name?.toLowerCase().includes(cakeName.toLowerCase())
           );
         } else {
           this.cakes = data;

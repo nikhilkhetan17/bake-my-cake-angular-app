@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { CakeRequest } from '../models/cakeRequest';
 import { CakeRequestService } from '../services/cake-request.service';
 import { MatTableDataSource } from '@angular/material/table';
+import {MatPaginator} from '@angular/material/paginator';
+import {MatSort} from '@angular/material/sort';
 
 @Component({
   selector: 'app-cake-requests',
@@ -18,8 +20,14 @@ export class CakeRequestsComponent {
     'address',
     'eggEggles',
     'cakeName',
+    'price',
+    'quantity',
+    'totalPrice'
   ];
   
+  @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
+  @ViewChild(MatSort) sort: MatSort | undefined;
+
   cakeRequests: CakeRequest[] = [];
   dataSource: any;
 
@@ -30,6 +38,8 @@ export class CakeRequestsComponent {
       next: (data) => {
         this.cakeRequests = data;
         this.dataSource = new MatTableDataSource(this.cakeRequests);
+        this.dataSource.paginator = this.paginator;
+        this.dataSource.sort = this.sort;
       },
       error: (err) => {
         alert(err);

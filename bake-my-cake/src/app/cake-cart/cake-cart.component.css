@@ -1,7 +1,7 @@
 #cake-left img {
   width: 100%;
   max-width: 650px;
-  height: 72vh;
+  height: 90vh;
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 1px 1px 10px #7a7979;
@@ -14,7 +14,7 @@
   gap: 0 70px;
   /* border: 1px solid black; */
   /* height: 85vh; */
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 /* #cake-right {
@@ -53,7 +53,7 @@ small {
   margin-right: 15px;
 }
 
-#pincode {
+#pincode, #quantity {
   margin-right: 15px;
 }
 

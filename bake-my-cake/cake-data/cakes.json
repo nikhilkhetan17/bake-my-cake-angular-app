@@ -6,7 +6,7 @@
       "price": 299,
       "rating": 4.5,
       "earliestDelivery": "Today",
-      "quantity": "3 Cup-cakes",
+      "desc": "per cup-cake",
       "category": "cupCake"
     },
     {
@@ -15,7 +15,7 @@
       "price": 399,
       "rating": 4.7,
       "earliestDelivery": "Today",
-      "quantity": "5 Brownies",
+      "desc": "per brownie",
       "category": "brownie"
     },
     {
@@ -24,7 +24,7 @@
       "price": 199,
       "rating": 4.6,
       "earliestDelivery": "Today",
-      "quantity": "10 Cookies",
+      "desc": "per cookie",
       "category": "cookie"
     },
     {
@@ -33,7 +33,7 @@
       "price": 499,
       "rating": 4.9,
       "earliestDelivery": "Today",
-      "quantity": "Half kg",
+      "desc": "per half kg",
       "category": "cake"
     },
     {
@@ -42,7 +42,7 @@
       "price": 699,
       "rating": 4.8,
       "earliestDelivery": "Today",
-      "quantity": "Half kg",
+      "desc": "per half kg",
       "category": "cake"
     },
     {
@@ -51,7 +51,7 @@
       "price": 599,
       "rating": 4.4,
       "earliestDelivery": "Today",
-      "quantity": "10 Bonbons",
+      "desc": "per bonbon",
       "category": "cookie"
     },
     {
@@ -60,7 +60,7 @@
       "price": 499,
       "rating": 4.5,
       "earliestDelivery": "Today",
-      "quantity": "10 Cookies",
+      "desc": "per cookie",
       "category": "cookie"
     },
     {
@@ -69,7 +69,7 @@
       "price": 199,
       "rating": 4.8,
       "earliestDelivery": "Today",
-      "quantity": "2 Cup-cakes",
+      "desc": "per cup-cake",
       "category": "cupCake"
     },
     {
@@ -78,7 +78,7 @@
       "price": 299,
       "rating": 4.6,
       "earliestDelivery": "Today",
-      "quantity": "Half kg",
+      "desc": "per half kg",
       "category": "cake"
     },
     {
@@ -87,7 +87,7 @@
       "price": 399,
       "rating": 4.9,
       "earliestDelivery": "Today",
-      "quantity": "Half kg",
+      "desc": "per half kg",
       "category": "cake"
     },
     {
@@ -96,7 +96,7 @@
       "price": 599,
       "rating": 4.5,
       "earliestDelivery": "Today",
-      "quantity": "Half kg",
+      "desc": "per half kg",
       "category": "cake"
     },
     {
@@ -105,7 +105,7 @@
       "price": 199,
       "rating": 4.7,
       "earliestDelivery": "Today",
-      "quantity": "3 Cup-cakes",
+      "desc": "per cup-cake",
       "category": "cupCake"
     },
     {
@@ -114,7 +114,7 @@
       "price": 599,
       "rating": 4.8,
       "earliestDelivery": "Today",
-      "quantity": "Half kg",
+      "desc": "per half kg",
       "category": "cake"
     },
     {
@@ -123,7 +123,7 @@
       "price": 199,
       "rating": 4.3,
       "earliestDelivery": "Today",
-      "quantity": "2 Brownies",
+      "desc": "per brownie",
       "category": "brownie"
     },
     {
@@ -132,7 +132,7 @@
       "price": 399,
       "rating": 4.9,
       "earliestDelivery": "Today",
-      "quantity": "Half kg",
+      "desc": "per half kg",
       "category": "cake"
     },
     {
@@ -141,7 +141,7 @@
       "price": 299,
       "rating": 4.5,
       "earliestDelivery": "Today",
-      "quantity": "3 Muffins",
+      "desc": "per muffin",
       "category": "cupCake"
     },
     {
@@ -150,7 +150,7 @@
       "price": 249,
       "rating": 4.7,
       "earliestDelivery": "Today",
-      "quantity": "4 Muffins",
+      "desc": "per muffin",
       "category": "cupCake"
     },
     {
@@ -159,7 +159,7 @@
       "price": 199,
       "rating": 4.6,
       "earliestDelivery": "Today",
-      "quantity": "2 Cup-cakes",
+      "desc": "per cup-cake",
       "category": "cupCake"
     }
   ],
@@ -173,6 +173,9 @@
       "address": "123, washington DC",
       "eggEggles": "withoutEgg",
       "cakeName": "Cherry Jelly Cheesecake",
+      "quantity": 2,
+      "price": 499,
+      "totalPrice": 998,
       "id": 1
     },
     {
@@ -184,6 +187,9 @@
       "address": "123 Main St, Anytown",
       "eggEggles": "withEgg",
       "cakeName": "Chocolate Summer Berries",
+      "quantity": 2,
+      "price": 299,
+      "totalPrice": 598,
       "id": 2
     },
     {
@@ -195,6 +201,9 @@
       "address": "456 Elm St, Somewhere",
       "eggEggles": "withoutEgg",
       "cakeName": "Monster Theme Cake",
+      "quantity": 1,
+      "price": 399,
+      "totalPrice": 399,
       "id": 3
     },
     {
@@ -206,6 +215,9 @@
       "address": "789 Oak Rd, Anotherplace",
       "eggEggles": "withEgg",
       "cakeName": "Monster Theme Cake",
+      "quantity": 3,
+      "price": 399,
+      "totalPrice": 1197,
       "id": 4
     },
     {
@@ -217,6 +229,9 @@
       "address": "101 Pine Ave, Elsewhere",
       "eggEggles": "withoutEgg",
       "cakeName": "Fruit Cake",
+      "quantity": 1,
+      "price": 599,
+      "totalPrice": 599,
       "id": 5
     },
     {
@@ -228,6 +243,9 @@
       "address": "555 Maple Ln, Somewhen",
       "eggEggles": "withEgg",
       "cakeName": "Fruit Cake",
+      "quantity": 2,
+      "price": 599,
+      "totalPrice": 1198,
       "id": 6
     },
     {
@@ -239,6 +257,9 @@
       "address": "777 Cedar St, Nowhere",
       "eggEggles": "withoutEgg",
       "cakeName": "Cherry Jelly Cheesecake",
+      "quantity": 2,
+      "price": 499,
+      "totalPrice": 998,
       "id": 7
     },
     {
@@ -250,6 +271,9 @@
       "address": "888 Birch Rd, Anywhen",
       "eggEggles": "withEgg",
       "cakeName": "Cherry Jelly Cheesecake",
+      "quantity": 1,
+      "price": 499,
+      "totalPrice": 499,
       "id": 8
     },
     {
@@ -261,6 +285,9 @@
       "address": "999 Willow Ave, Everyplace",
       "eggEggles": "withoutEgg",
       "cakeName": "Berries Summer Cupcakes",
+      "quantity": 1,
+      "price": 299,
+      "totalPrice": 299,
       "id": 9
     },
     {
@@ -270,6 +297,9 @@
       "pincode": 987654,
       "address": "111 Rose Ln, Nowhen",
       "cakeName": "Butter Cookies",
+      "quantity": 2,
+      "price": 199,
+      "totalPrice": 398,
       "id": 10
     },
     {
@@ -281,7 +311,36 @@
       "eggEggles": "withoutEgg",
       "address": "123, washington DC",
       "cakeName": "Cherry Jelly Cheesecake",
+      "quantity": 1,
+      "price": 499,
+      "totalPrice": 499,
       "id": 11
+    },
+    {
+      "deliveryDate": "10-10-2023",
+      "email": "nikhilkhetan22@gmail.com",
+      "phone": 8871210094,
+      "pincode": 492001,
+      "address": "HDD-81, Phase-3, Kabir Nagar",
+      "quantity": 3,
+      "eggEggles": "withoutEgg",
+      "cakeName": "Cherry Jelly Cheesecake",
+      "price": 499,
+      "totalPrice": 1497,
+      "id": 12
+    },
+    {
+      "deliveryDate": "10-10-2023",
+      "email": "nikhilkhetan22@gmail.com",
+      "phone": 8819989891,
+      "pincode": 492001,
+      "address": "HDD-81, Phase-3, Kabir Nagar",
+      "eggEggles": "withoutEgg",
+      "quantity": 5,
+      "cakeName": "Chocolate Cookies",
+      "price": 499,
+      "totalPrice": 2495,
+      "id": 13
     }
   ]
 }
