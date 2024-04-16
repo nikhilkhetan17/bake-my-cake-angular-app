@@ -10,7 +10,8 @@ export class CakeRequestService {
 
   constructor(private http: HttpClient) { }
 
-  URL: string = "http://localhost:3000/cakeRequests";
+  // URL: string = "http://localhost:3000/cakeRequests";
+  URL: string = "https://bake-my-cake-angular-app-json-server.vercel.app/cakeRequests";
 
   getAllCakeRequests(): Observable<Array<CakeRequest>> {
     return this.http.get<Array<CakeRequest>>(`${this.URL}`);

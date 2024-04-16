@@ -7,7 +7,8 @@ import { Cake } from '../models/cake';
   providedIn: 'root',
 })
 export class CakeService {
-  URL: string = 'http://localhost:3000/cakes';
+  // URL: string = 'http://localhost:3000/cakes';
+  URL: string = 'https://bake-my-cake-angular-app-json-server.vercel.app/cakes';
 
   constructor(private http: HttpClient) {}
 
