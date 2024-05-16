@@ -1,6 +1,6 @@
 ## Live Link:- https://bake-my-cake-angular-app.vercel.app/
 
-### Developed a frontend bakery store application allowing users to browse and order cakes and cookies. Utilized JSON Server for data management. Created a admin page where admin can see order details of the customer.
+#### Developed a frontend bakery store application allowing users to browse and order cakes and cookies. Utilized JSON Server for data management. Created a login page where admin can see order details of the customer. Customer can also search and filter different cakes and cookies.
 
 ## Project - Bake My Cake
 
